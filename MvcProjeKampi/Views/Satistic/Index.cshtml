@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<style>
+    .custom-list{
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+    }
+    .item-custom {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        margin: 10px;
+        width: calc(100% / 3 - 20px);
+        min-height: 10rem;
+    }
+
+    .item-custom >strong{
+        font-size:3rem;
+    }
+   
+</style>
+<h2>İstatistik sayfası</h2>
+
+<ul class="custom-list list-group list-group-horizontal">
+    <li class="item-custom  list-group-item-primary"><strong>@ViewBag.totCategory</strong><span>Toplam kategori sayısı</span></li>
+    <li class="item-custom  list-group-item-warning"><strong>@ViewBag.softwareTitleNumber</strong><span>Yazılım kategorisine ait başlık sayısı</span></li>
+    <li class="item-custom  list-group-item-danger"><strong>@ViewBag.writerANumber</strong><span>adında a harfi geçen yazar sayısı</span></li>
+    <li class="item-custom  list-group-item-secondary"><strong>@ViewBag.mostTitleInCategory</strong><span>en fazla başlığa sahip kategori</span></li>
+    <li class="item-custom  list-group-item-success"><strong>@ViewBag.statDifference</strong><span>durumu true olanlarla false olan kategorilerin farkı</span></li>
+
+</ul>

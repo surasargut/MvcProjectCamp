@@ -1,0 +1,27 @@
+sonunda () varsa metot anlamına gelir
+
+index -> listeleme işlemi için kullanılır
+
+view -> frontend
+
+Controller -> backend
+
+Layout -> sayfalar değişse de sabit kalan alan
+
+
+:katmanlar:
+
+1- Entitiy Layer
+	başlıklar
+		BaşlıI ID
+		Başlık İsim
+		Başlık Tarih
+		Başlık Yazar
+
+2- Data Access Layer 
+	crud -> Create Read Update Delete
+
+3- Business Layer
+	veri tabanına bir kayıt işlenirken istediğimiz şartların sağlanıp sağlanmadığı kontrol edilir. 
+
+4- Presentation Layer (sunum katmanı) - User Interface(UI)
